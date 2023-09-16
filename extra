@@ -1,0 +1,122 @@
+https://code.visualstudio.com/ > Install
+https://nodejs.org/en > Install
+https://git-scm.com/downloads > Install
+https://github.com/ > Signup
+https://github.com/Aakashdeveloper > Follow
+
+///Extension
+> code spell checker
+> githistory
+> gitlens
+> tabnine
+> vscode-icons
+
+// Add to chrome
+https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh
+
+FullStack Zomato app
+Template Forms
+Reactive Forms
+Login logout (jwt)
+Dummy api
+Deployment
+> Angular over node server
+> Angular over python server
+> Netlify(https://www.netlify.com/)
+> Github
+> Render.com
+> AWS
+> Jenkins
+> nginx
+> Docker 
+> Github Actions
+LazyLoading
+Testing
+Zomato+login logout
+Payment
+//////////////////////
+Ang Material
+Multilingual
+Zomato + Google Login
+
+>>>>>>>>NO Covered<<<<<>>>>>
+> HTML CSS JAVASCRIPT
+> No Api Building (app,loginlogout)
+
+Angular is a frontend framework that help to build single page application
+using component base structure
+
+//open source
+
+
+JSON
+Javascript Object Notation
+[
+    {
+        "name":"Nikita",
+        "city":"Paris"
+    },
+    {
+        "name":"Aman",
+        "city":"Delhi"
+    }
+]
+
+////////////////////////
+package.json
+> Entry point to app
+> Name,version,description
+> Package in the application
+> Script(Start,build,test)
+
+///Step to generate package.json
+** NodeJs must be installed in laptop
+> open cmd/terminal and go inside the folder
+> npm init
+> Answer all questions
+> Type "yes"
+
+
+///Step to install any package
+(local)
+> open cmd/terminal and go inside the folder
+> npm i packagename
+> npm i packagename@1.6.4
+
+///Global dependency
+> Install in laptop c drive
+> will not added in package.json
+> only require for generate application
+> Require admin permission to install 
+
+# windows
+> open cmd as admin
+> npm i -g packagename
+
+# Mac/linuc
+> open terminal
+> sudo npm i -g packagename
+
+// Step to generate angular app
+* One time
+> open cmd as admin
+> npm i -g @angular/cli
+
+// Every time you need new angular app
+> open cmd/terminal
+> go inside the folder where you want app
+> ng new appname
+
+
+// Step to run the application
+> open cmd/terminal
+> go inside the folder where you want app
+> npm start
+
+
+
+/// FileWalkthrough
+package.json > Main file and entry point to the app
+package-lock.json > Dependency tree
+node_module > contains all the packages
+.gitignore > thing we don't want to push to git
