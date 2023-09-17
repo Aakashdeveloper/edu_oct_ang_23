@@ -14,6 +14,8 @@ https://github.com/Aakashdeveloper > Follow
 // Add to chrome
 https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh
 
+Npm
+/////////////////
 FullStack Zomato app
 Template Forms
 Reactive Forms
@@ -120,3 +122,64 @@ package.json > Main file and entry point to the app
 package-lock.json > Dependency tree
 node_module > contains all the packages
 .gitignore > thing we don't want to push to git
+ReadMe.md > Static file only details description
+
+tsconfig.json > Provide application which JS version to target and where build be made
+tsconfig.spec.json > test file for tsconfig.json
+tsconfig.app.json > will run for transpile using tsconfig.json configuration
+
+karma.config.js > Test configuration
+angular.json
+        > Main Configuration File
+        > Any Common CSS, JS, start file
+.editorconfig > To make development evn same for all developers
+.browserlistrc > supported browser
+
+>>>>>>Src
+app > main folder in which all development will happen
+assets> static files like images will be there
+env > configurate env acc to devleper
+favicon > icon apper in title bar of app
+index.html > main html file that will load in browser
+main.ts > main ts filde or first .ts file run in application
+polyfills > making app compatible for IE/edge
+style.css > common css for whole appplication
+test.ts > this file is required by karma.conf.js
+
+//////// Follow Application ///////
+Package.json > angular.json > main.ts > app.module.ts > app.component.ts
+                    || 
+                    \/
+                index.html (this file will load in browser)
+
+
+//upgrade guide
+https://update.angular.io/?l=3&v=9.1-15.0
+
+https://blog.angular.io/
+
+///////////Angular Build Block////////
+> Module
+# ngModule
+* Parent of the application
+* All Declaration will happen here
+
+> Component
+# component
+* html ,css and logics of app
+
+> Pipes
+# pipe & pipetransform
+* Run time data manipulation
+
+> Services
+# injectable
+* To connect with external links
+* Dependency Injection
+
+> Routing
+# ngModule
+* To navigate between the page
+* To Control access of the application
+
+ng g c componentname
