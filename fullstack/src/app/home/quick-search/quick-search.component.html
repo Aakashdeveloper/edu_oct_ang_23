@@ -1,1 +1,31 @@
-<p>quick-search works!</p>
+<div id="quickSearch">
+    <span class="quickHeading">
+        Quick Search
+    </span>
+    <span class="quickSubHeading">
+        Find Restaurants By MealType
+    </span>
+    <div class="mainBox">
+        
+        <div class="tileContainer" *ngFor="let meal of mealData">
+            <div class="tileComponent1">
+                <img [src]="meal.meal_image" alt="drinks"/>
+            </div>
+            <div class="tileComponent2">
+                <div class="compHeading">
+                    <a href="../listing/listing.html">
+                        {{meal.mealtype | MyCustomePipe:'lower'}}
+                    </a>
+                </div>
+                <div class="compSubHeading">
+                    {{meal.content}}
+                </div>
+            </div>
+        </div>
+       
+    </div>
+</div>
+
+
+<!-- <p>{{price | currency:'GBP'}}</p> -->
+<!-- <p>{{openedOn|date:'EEEE, MMMM d, y, h:mm:ss a'}}</p> -->

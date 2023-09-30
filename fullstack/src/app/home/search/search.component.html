@@ -1,15 +1,18 @@
 <div id="search">
     <div id="logo">
-        <span>D!</span>
+        <span>{{logo}}!</span>
     </div>
     <div id="heading">
-        Find Best Place Near You
+        {{title}}
     </div>
     <div id="dropdown">
-        <select>
-            <option>----Select Your City----</option>
+        <select (change)="handleCity($event)">
+            <option value="default">----Select Your City----</option>
+            <option *ngFor="let loc of cities" [value]="loc.state_id">
+                {{loc.state}}
+            </option>
         </select>
-        <select class="restSelect">
+        <select class="restSelect" [disabled]="disabled">
             <option>----Select Your Restaurants----</option>
         </select>
     </div>

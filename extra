@@ -183,3 +183,52 @@ https://blog.angular.io/
 * To Control access of the application
 
 ng g c componentname
+
+databinding 
+>>>One Way Data Binding
+* DataBinding {{}}
+* PropertyBinding []
+* Event Binding ()
+>>> Two way data binding [()]
+
+
+Structural direcive
+*ngIf
+*ngFor
+*ngSwitch
+
+
+var city = "paRiS"
+undefined
+city.charAt(0).toUpperCase()
+'P'
+city.slice(1)
+'aRiS'
+city.slice(1).toLowerCase()
+'aris'
+city.charAt(0).toUpperCase()+city.slice(1).toLowerCase()
+'Paris'
+
+
+(get) cityname >           http://3.17.216.66:4000/location
+(get) restwrtcity >        http://3.17.216.66:4000/restaurant?stateId=1
+(get) quickSearch>         http://3.17.216.66:4000/quicksearch
+
+(get) onbasisofMeal >      http://3.17.216.66:4000/restaurant?mealtype_id=
+(get) cuisinefilter >      http://3.17.216.66:4000/filter/4?cuisine=1
+(get) costfilter >         http://3.17.216.66:4000/filter/1?hcost=1000&lcost=500
+
+(get) restdetails >        http://3.17.216.66:4000/details/1
+(post)placeOrder >        
+
+(get) allorder>            
+       
+(get) restaurants>         http://3.17.216.66:4000/restaurants
+
+
+var a = 10
+var b = "my age is "+a
+"my age is 10"
+
+var a = 10
+var b = `my age is ${a}`
