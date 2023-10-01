@@ -232,3 +232,15 @@ var b = "my age is "+a
 
 var a = 10
 var b = `my age is ${a}`
+
+params
+> what we pass after /
+> We need to define in the url
+> if define then complusory to pass
+> for passing 1 or 2 values use params
+
+queryParam
+> what we pass after ?
+> no need to define
+> not complusory to pass
+> for passing multiple value use query

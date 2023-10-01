@@ -13,7 +13,7 @@
             </div>
             <div class="tileComponent2">
                 <div class="compHeading">
-                    <a href="../listing/listing.html">
+                    <a [routerLink]="['/listing',meal.mealtype_id]">
                         {{meal.mealtype | MyCustomePipe:'lower'}}
                     </a>
                 </div>

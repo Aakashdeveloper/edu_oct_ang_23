@@ -10,6 +10,10 @@ import { SearchComponent } from './home/search/search.component';
 import { QuickSearchComponent } from './home/quick-search/quick-search.component';
 import { MyUpperPipe } from './pipes/myUpper.pipe';
 import { HomeService } from './services/Home.service';
+import { ListingComponent } from './listing/listing.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { AppRoutingModule } from './app-routing.module';
+import { ListingService } from './services/listing.services';
 
 @NgModule({
     // All the component & pipes
@@ -20,18 +24,22 @@ import { HomeService } from './services/Home.service';
         HomeComponent,
         SearchComponent,
         QuickSearchComponent,
-        MyUpperPipe
+        MyUpperPipe,
+        ListingComponent,
+        NotFoundComponent
     ],
 
     // All the modules
     imports: [
         BrowserModule,
-        HttpClientModule
+        HttpClientModule,
+        AppRoutingModule
     ],
 
     // All the services
     providers:[
-        HomeService
+        HomeService,
+        ListingService
     ],
 
     // only and only main component

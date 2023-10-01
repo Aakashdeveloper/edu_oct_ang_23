@@ -6,11 +6,8 @@ footer{
     background-color:#3b2632 ;
     color:white;
     text-align: center;
-}
-
-.socialLogo{
-    height:50px;
-    width:50px;
+    width:100%;
+    display: inline-block;
 }
 
 .footText{
@@ -28,4 +25,13 @@ ul{
 
 .noborder{
     border:none
+}
+
+#social{
+    float:right;
+    margin-top:5px;
+}
+.socialLogo{
+    height:50px;
+    width:50px;
 }
