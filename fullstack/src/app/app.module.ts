@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { FooterComponent } from './Footer/Footer.component';
@@ -14,6 +15,10 @@ import { ListingComponent } from './listing/listing.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ListingService } from './services/listing.services';
+import { RestSearchFilter } from './pipes/searchFilter.pipe';
+import { CuisineFilterComponent } from './filters/cuisineFilter.component';
+import { CostFilterComoponent } from './filters/costFilter.component';
+import { DetailsComponent } from './details/details.component';
 
 @NgModule({
     // All the component & pipes
@@ -26,14 +31,19 @@ import { ListingService } from './services/listing.services';
         QuickSearchComponent,
         MyUpperPipe,
         ListingComponent,
-        NotFoundComponent
+        NotFoundComponent,
+        RestSearchFilter,
+        CuisineFilterComponent,
+        CostFilterComoponent,
+        DetailsComponent
     ],
 
     // All the modules
     imports: [
         BrowserModule,
         HttpClientModule,
-        AppRoutingModule
+        AppRoutingModule,
+        FormsModule
     ],
 
     // All the services

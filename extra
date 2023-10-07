@@ -244,3 +244,15 @@ queryParam
 > no need to define
 > not complusory to pass
 > for passing multiple value use query
+
+
+var a = [3,6,8,4,6,3,9]
+a.filter((data) => {
+    return data>5
+})
+
+
+var city = ["Delhi","Amsterdam","London","Venice"]
+
+@Input > from parent to child
+@Output > From child to parent

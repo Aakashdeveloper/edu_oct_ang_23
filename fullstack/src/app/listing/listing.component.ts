@@ -12,7 +12,9 @@ import { ActivatedRoute } from '@angular/router';
 
 export class ListingComponent implements OnInit{
     mealId:number = 1;
-    restaurants: IRest[] = []
+    restaurants: IRest[] = [];
+    userInput:string=''
+    filterText:string = "Cuisine Option"
 
     constructor(private route: ActivatedRoute,
                 private listingService:ListingService){}
@@ -25,4 +27,22 @@ export class ListingComponent implements OnInit{
                 this.restaurants = data
             })
     }
+
+    dataReceive(cuisineId:string){
+        console.log("In Parent "+cuisineId)
+        this.listingService.getCuisineData(cuisineId)
+            .subscribe((data:IRest[]) => {
+                this.restaurants = data
+            })
+    }
+
+    costDataReceive(cost:string){
+        let lcost = cost.split('-')[0]
+        let hcost = cost.split('-')[1];
+        this.listingService.getCostData(lcost,hcost,this.mealId)
+            .subscribe((data:IRest[]) => {
+                this.restaurants = data
+            })
+    }
+
 }
