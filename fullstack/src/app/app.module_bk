@@ -6,12 +6,20 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './Footer/Footer.component';
 import { HeaderComponent } from './Header/header.component';
+import { HomeComponent } from './home/home.component';
+import { SearchComponent } from './home/search/search.component';
+import { QuickSearchComponent } from './home/quick-search/quick-search.component';
+import { MyUpperPipe } from './pipes/myUpper.pipe';
+import { HomeService } from './services/Home.service';
+import { ListingComponent } from './listing/listing.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ListingService } from './services/listing.services';
+import { RestSearchFilter } from './pipes/searchFilter.pipe';
+import { CuisineFilterComponent } from './filters/cuisineFilter.component';
+import { CostFilterComoponent } from './filters/costFilter.component';
 import { DetailsComponent } from './details/details.component';
 import { DetailsService } from './services/details.service';
-import { HomeModule } from './home/home.module';
-import { ListingModule } from './listing/listing.module';
 
 @NgModule({
     // All the component & pipes
@@ -19,7 +27,15 @@ import { ListingModule } from './listing/listing.module';
         AppComponent,
         HeaderComponent,
         FooterComponent,
+        HomeComponent,
+        SearchComponent,
+        QuickSearchComponent,
+        MyUpperPipe,
+        ListingComponent,
         NotFoundComponent,
+        RestSearchFilter,
+        CuisineFilterComponent,
+        CostFilterComoponent,
         DetailsComponent
     ],
 
@@ -28,13 +44,13 @@ import { ListingModule } from './listing/listing.module';
         BrowserModule,
         HttpClientModule,
         AppRoutingModule,
-        FormsModule,
-        HomeModule,
-        ListingModule
+        FormsModule
     ],
 
     // All the services
     providers:[
+        HomeService,
+        ListingService,
         DetailsService
     ],
 
