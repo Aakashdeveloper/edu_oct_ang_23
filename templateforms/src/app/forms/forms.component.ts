@@ -13,7 +13,10 @@ export class FormsComponent implements OnInit {
 
   constructor(private formService:FormService,
               private router:Router) { }
+  
+  language:string[] = ["Node","React","Angular","JavaScript"]
   myEmployee = new IUser('','','','','')
+  hasCodeLangError:boolean = false;
 
 
   ngOnInit(): void {
@@ -25,6 +28,24 @@ export class FormsComponent implements OnInit {
       this.myEmployee.firstName = value.charAt(0).toUpperCase()+value.slice(1).toLowerCase()
     }else{
       this.myEmployee.firstName = value
+    }
+  }
+
+  showPassword(event:Event):void{
+    console.log((event.target as HTMLInputElement).type)
+    let inputType = (event.target as HTMLInputElement).type
+    if(inputType === "password"){
+      (event.target as HTMLInputElement).type = "text"
+    }else{
+      (event.target as HTMLInputElement).type = "password"
+    }
+  }
+
+  validateCodeLang():void{
+    if(this.myEmployee.clang === 'default'){
+        this.hasCodeLangError = true
+    }else{
+      this.hasCodeLangError = false
     }
   }
 

@@ -15,12 +15,13 @@ https://github.com/Aakashdeveloper > Follow
 https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh
 
 Npm
-/////////////////
 FullStack Zomato app
 Template Forms
-Reactive Forms
-Login logout (jwt)
 Dummy api
+Reactive Forms
+
+/////////////////
+Login logout (jwt)
 Deployment
 > Angular over node server
 > Angular over python server
@@ -32,7 +33,10 @@ Deployment
 > nginx
 > Docker 
 > Github Actions
+
 LazyLoading
+Edit Functionality
+
 Testing
 Zomato+login logout
 Payment
