@@ -25,7 +25,7 @@ export class EmployeeComponent implements OnInit {
     
     ngOnInit(): void {
         this.employeeForm = this.fb.group({
-            firstName:['John',[Validators.required,Validators.minLength(3)]],
+            firstName:['',[Validators.required,Validators.minLength(3)]],
             lastName:['abc',[Validators.minLength(3),Validators.maxLength(8)]],
             email:['a@a.com',[Validators.required,
                 Validators.pattern('^([a-zA-Z0-9]+)@([a-zA-Z0-9]+)\.([a-zA-Z]{2,5})$')]],

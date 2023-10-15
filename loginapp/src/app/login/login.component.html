@@ -1,0 +1,51 @@
+<hr/>
+<div class="container">
+    <div class="panel panel-danger">
+        <div class="panel-heading">
+            Login Forms
+        </div>
+        <div class="panel-body">
+            <h2 style="color:red">{{loginError}}</h2>
+            <form #form="ngForm" (submit)="submitForm(form)">
+                
+               
+                <div class="row">
+                    <div class="form-group" class="col-md-6"
+                    [class.has-error]="mail.invalid && mail.dirty">
+                        <label class="control-label" for="email">Email</label>
+                        <input id="email" class="form-control" name="email"
+                        [(ngModel)] = "myEmployee.email"
+                        pattern="^([a-zA-Z0-9]+)@([a-zA-Z0-9]+)\.([a-zA-Z]{2,5})$"
+                        #mail="ngModel"/>
+                        <div class="alert alert-danger" 
+                        *ngIf="mail.invalid && mail.dirty">
+                        Please eneter valid email
+                        </div>
+                    </div>
+                    <div class="form-group" class="col-md-6"
+                    [class.has-error]="pwd.invalid && pwd.dirty"
+                    [class.has-success]="pwd.valid && pwd.touched">
+                        <label for="password" class="control-label">Password</label>
+                        <input id="password" class="form-control" type="text"
+                        name="password" [(ngModel)]="myEmployee.password"
+                        minlength="8"
+                        #pwd="ngModel"/>
+                        <div class="alert alert-danger" *ngIf="pwd.invalid && pwd.dirty">
+                            Min Length of password is 8
+                        </div>
+                    </div>
+                    
+                   
+                   
+                </div>
+                <div >
+                    <br/>
+                    <button class="btn btn-info" type="submit">
+                        Login
+                    </button>
+                </div>
+               
+            </form>
+        </div>
+    </div>
+</div>
