@@ -9,7 +9,7 @@ import { IMeal } from '../model/meal.model';
 
 export class HomeService{
 
-    private base_url = "http://3.17.216.66:4000";
+    base_url = "http://3.17.216.66:4000";
 
     constructor(private http:HttpClient){}
 

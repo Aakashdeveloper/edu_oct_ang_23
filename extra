@@ -31,19 +31,14 @@ Deployment
 > nginx
 > Docker 
 > Github Actions
+> LazyLoading
+> Testing
+> Edit Functionality
 /////////////////
-LazyLoading
-Testing
-
-Edit Functionality
-
-
 Zomato+login logout
-Payment
-//////////////////////
 Ang Material
 Multilingual
-Zomato + Google Login
+
 
 >>>>>>>>NO Covered<<<<<>>>>>
 > HTML CSS JAVASCRIPT
@@ -292,3 +287,14 @@ json-server --watch data.json --port 8800
 
 docker build . -t imagename 
 docker run --p 4200:9881 imagename
+
+
+/// lazyLoading
+> ng g m User --routing
+> ng g c User/viewUser
+
+
+/////////////////
+* setup mongodb
+> client > ng serve --port 8081
+> server > node server.js
