@@ -1,7 +1,8 @@
 import { Component,OnInit,OnChanges } from '@angular/core';
 import { ICity } from '../../model/location.model';
 import { HomeService } from '../../services/Home.service';
-import { IRest} from '../../model/rest.model'
+import { IRest} from '../../model/rest.model';
+import {forkJoin} from 'rxjs';
 
 @Component({
   selector: 'app-search',
@@ -24,6 +25,14 @@ export class SearchComponent implements OnInit,OnChanges  {
   // when the component will load
   ngOnInit(): void {
     console.log(">>>>inside ngOnInit>>")
+    // const api1 = this.homeService.getCityData();
+    // const api2 = this.homeService.getMeal();
+
+    // forkJoin([api1,api2]).subscribe((result) => {
+    //   console.log(">>>0>>>",result[0])
+    //   console.log(">>>1>>>>",result[1])
+    // })
+
     this.homeService.getCityData()
       .subscribe((data:ICity[]) => this.cities = data)
   }
