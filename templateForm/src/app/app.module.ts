@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { FormsComponent } from './forms/forms.component';
 import { AfterSubmitComponent } from './after-submit/after-submit.component';
 import { FormService } from './forms/forms.service';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FormService } from './forms/forms.service';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatButtonModule
   ],
   providers: [
     FormService

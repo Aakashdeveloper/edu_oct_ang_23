@@ -12,6 +12,11 @@ import { DetailsComponent } from './details/details.component';
 import { DetailsService } from './services/details.service';
 import { HomeModule } from './home/home.module';
 import { ListingModule } from './listing/listing.module';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { RegisterService } from './register/register.service';
+import { LoginService } from './login/login.service';
+import { PlaceOrderComponent } from './place-order/place-order.component';
 
 @NgModule({
     // All the component & pipes
@@ -20,7 +25,10 @@ import { ListingModule } from './listing/listing.module';
         HeaderComponent,
         FooterComponent,
         NotFoundComponent,
-        DetailsComponent
+        DetailsComponent,
+        LoginComponent,
+        RegisterComponent,
+        PlaceOrderComponent
     ],
 
     // All the modules
@@ -35,7 +43,9 @@ import { ListingModule } from './listing/listing.module';
 
     // All the services
     providers:[
-        DetailsService
+        DetailsService,
+        RegisterService,
+        LoginService
     ],
 
     // only and only main component

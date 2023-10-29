@@ -34,7 +34,6 @@ Deployment
 > LazyLoading
 > Testing
 > Edit Functionality
-/////////////////
 Zomato+login logout
 Ang Material
 Multilingual
@@ -298,3 +297,14 @@ docker run --p 4200:9881 imagename
 * setup mongodb
 > client > ng serve --port 8081
 > server > node server.js
+
+
+Aakash Handa is inviting you to a scheduled Zoom meeting.
+
+Topic: Aakash Handa's Personal Meeting Room
+
+Join Zoom Meeting
+https://us04web.zoom.us/j/2208669018?pwd=MEZqNWlLU3BkdjdRWGk1WEVEd0R1dz09
+
+Meeting ID: 220 866 9018
+Passcode: 861484
