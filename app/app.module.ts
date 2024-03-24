@@ -3,8 +3,7 @@ import {NgModule} from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import {AppComponent} from './app.component';
-import { EmployeeComponent } from './employeeForm/employeeForm.component';
-
+import {EmployeeComponent} from './employeeForm/employeeForm.component';
 
 @NgModule({
     declarations: [
