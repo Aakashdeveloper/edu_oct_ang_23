@@ -48,7 +48,4 @@ export class ListingComponent implements OnInit {
             this.restaurants = data
         })
     }
-
-   
-    
 }
