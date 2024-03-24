@@ -5,3 +5,46 @@ body{
 a{
     text-decoration:none
 }
+
+
+@media screen and (max-width:1600px) {
+    body{
+        background-color:#d9b6ca
+    }
+}
+
+@media screen and (max-width:1400px) {
+    body{
+        background-color:#deddb7
+    }
+}
+
+@media screen and (max-width:1200px) {
+    body{
+        background-color:#b8e2b8
+    }
+}
+
+@media screen and (max-width:1000px) {
+    body{
+        background-color:#badfe5
+    }
+    .tileContainer{
+        width:45%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    body{
+        background-color:#beb9e5
+    }
+}
+
+@media screen and (max-width:600px) {
+    body{
+        background-color:#e9b6bf
+    }
+    .tileContainer{
+        width:90%;
+    }
+}

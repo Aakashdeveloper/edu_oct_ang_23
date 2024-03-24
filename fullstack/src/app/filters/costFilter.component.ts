@@ -1,14 +1,16 @@
-import {Component,Output,EventEmitter} from '@angular/core';
+import { Component,Output, EventEmitter } from '@angular/core';
 
 @Component({
-    selector: 'app-cost-filter',
-    templateUrl: './costFilter.component.html'
+    selector:'app-cost-filter',
+    templateUrl:'./costFilter.component.html'
 })
 
-export class CostFilterComoponent{
-    costType:string=''
+export class CostFilter{
 
-    @Output() costClicked: EventEmitter<string> = new EventEmitter();
+    costType:string='';
+
+    @Output() costClicked:EventEmitter<string> = new EventEmitter<string>()
+
 
     onCostSelect():void{
         this.costClicked.emit(this.costType)

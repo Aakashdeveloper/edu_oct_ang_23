@@ -1,29 +1,17 @@
 <header>
     <div id="brand">
         Developer Funnel
-        <a [routerLink]="['/home']" class="btn btn-info">Home</a>
+        <button [routerLink]="['/']" class="btn btn-info">Home</button>
     </div>
     <div id="social">
-        <div *ngIf = 'token == ""'>
-            <a [routerLink]="['/login']" class="btn btn-primary">
-                <span class="glyphicon glyphicon-log-in"></span> Login
-            </a> &nbsp;
-            <a [routerLink]="['/register']" class="btn btn-warning">
-                <span class="glyphicon glyphicon-user"></span> SignUp
-            </a>
-           
-        </div>
-        <div *ngIf = 'token !== ""'>
-            <a [routerLink]="['/login']" class="btn btn-primary">
-                <span class="glyphicon glyphicon-info"></span> 
-                Hi {{userInfo.name}}
-            </a> &nbsp;
-            <a (click)="logoutUser()" class="btn btn-danger">
-                <span class="glyphicon glyphicon-log-out"></span> Logout
-            </a>
-           
-        </div>
-       
-        
+        <a href="">
+            <img src="../../assets/images/facebook.png" alt="fblogo" class="socialLogo"/>
+        </a>
+        <a href="">
+            <img src="https://i.ibb.co/GHKVNYt/insta.png" alt="fblogo" class="socialLogo"/>
+        </a>
+        <a href="">
+            <img src="https://i.ibb.co/w07K2Vn/youtube1.png" alt="fblogo" class="socialLogo"/>
+        </a>
     </div>
 </header>

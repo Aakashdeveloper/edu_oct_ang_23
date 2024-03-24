@@ -1,24 +1,20 @@
-import {Pipe,PipeTransform} from '@angular/core';
+import {Pipe, PipeTransform} from '@angular/core';
 
 @Pipe({
     name:'MyCustomePipe'
 })
 
-// function toTitle(str){
-//     return str.replace(/\b\w/g,(txt)=>{
-//         return txt.charAt(0).toUpperCase()+txt.substr(1).toLowerCase()
+export class MyUpperPipe implements PipeTransform{
 
-//     })
-// }
-
-export class MyUpperPipe implements PipeTransform {
-    transform(value:string,typeOf:string):string {
-        if(typeOf == 'Upper'){
+    transform(value:string,param1:String):string {
+        console.log(param1)
+        if(param1 == 'Upper'){
             value = value.toUpperCase()
         }else{
-            value = value.charAt(0).toUpperCase()+value.slice(1).toLowerCase()
+            value = value.toLowerCase()
         }
-        
+       
+
         return value
     }
 }

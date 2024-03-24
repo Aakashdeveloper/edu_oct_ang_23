@@ -1,0 +1,33 @@
+<div id="mainContent">
+    <div class="imgDiv">
+        <img [src] = "details[0].restaurant_thumb" [alt]="details[0].restaurant_name"/>
+    </div>
+    <div class="contentDiv">
+        <h1>{{details[0].restaurant_name}}</h1>
+        <span>265 Customer Rating is {{details[0].rating_text}}</span>
+        <h3><del>Old Price: 260</del></h3>
+        <h3>New Price {{details[0].cost}}</h3>
+        <h3>Best Taste for Fresh Food at your Doorstep and Dine In</h3>
+        <div class="feature_container">
+            <div class="feature">
+                <img src="https://i.ibb.co/wJvrhYg/veg.png" alt="veg" class="imgIcon"/>
+                <p>Pure Veg</p>
+            </div>
+            <div class="feature">
+                <img src="https://i.ibb.co/mD3jpgc/sentizied.png" alt="veg" class="imgIcon"/>
+                <p>Fully Senatized</p>
+            </div>
+            <div class="feature">
+                <img src="https://i.ibb.co/kHrm3Mh/delivery.png" alt="veg" class="imgIcon"/>
+                <p>Free Delivery</p>
+            </div>
+        </div>
+        <h2>Available</h2>
+        <div>
+            <a class="btn btn-danger" [routerLink]="['/listing',mealId]">Back</a> &nbsp;
+            <a class="btn btn-success"
+            [routerLink]="['/placeOrder',details[0].restaurant_name]">Checkout</a>
+        </div>
+    </div>
+
+</div>  

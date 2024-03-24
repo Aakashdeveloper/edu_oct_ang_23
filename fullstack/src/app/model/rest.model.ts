@@ -1,7 +1,7 @@
-export interface IRest {
+export interface IRest{
     _id: string,
     restaurant_id: number,
-    restaurant_name:string,
+    restaurant_name: string,
     location_id: number,
     state_id: number,
     restaurant_thumb: string,
@@ -9,8 +9,8 @@ export interface IRest {
     rating_text: string,
     cost: number,
     address: string,
-    mealTypes: IMealType[],
-    cuisines: ICuisineType[],
+    mealTypes:IMealType[],
+    cuisines:ICuisineType[],
     image_gallery: string[]
 }
 
